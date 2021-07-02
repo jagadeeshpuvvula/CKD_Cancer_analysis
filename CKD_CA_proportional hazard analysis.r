@@ -71,4 +71,4 @@ ggsurvplot(fit1, data = lungca, pval = TRUE)
 # Fit a Cox proportional hazards model
 lungca$ICD_Group = relevel(lungca$ICD_Group, ref = "NO_Cancer")
 fit.coxph <- coxph(surv_object ~ ICD_Group$C34, data = lungca)
-ggforest(fit.coxph, data = lungca)
+ggforest(fit.coxph, data = lungca) 
